@@ -1,0 +1,2 @@
+"split","Overall","AR","CP","FP-C","FP-S","LR","action_recognition","attribute_recognition","function_reasoning","future_prediction","identity_reasoning","image_quality","image_scene","object_localization","physical_property_reasoning","spatial_relationship","structuralized_imagetext_understanding"
+"dev","0.95","0.9411764705882353","0.9166666666666666","1.0","1.0","1.0","1.0","1.0","1.0","1.0","1.0","0.9032258064516129","1.0","1.0","0.9230769230769231","1.0","1.0"

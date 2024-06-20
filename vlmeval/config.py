@@ -43,9 +43,9 @@ api_models = {
     'QwenVLPlus': partial(QwenVLAPI, model='qwen-vl-plus', temperature=0, retry=10),
     'QwenVLMax': partial(QwenVLAPI, model='qwen-vl-max', temperature=0, retry=10),
     # Reka Series
-    'RekaEdge': partial(Reka, model='reka-edge-20240208'), 
-    'RekaFlash': partial(Reka, model='reka-flash-20240226'), 
-    'RekaCore': partial(Reka, model='reka-core-20240415'), 
+    'RekaEdge': partial(Reka, model='reka-edge-20240208'),
+    'RekaFlash': partial(Reka, model='reka-flash-20240226'),
+    'RekaCore': partial(Reka, model='reka-core-20240415'),
     # Step1V Series
     'Step1V': partial(GPT4V, model='step-1v-8k', api_base="https://api.stepfun.com/v1/chat/completions", temperature=0, retry=10),
     # Internal Only
@@ -62,6 +62,7 @@ minicpm_series = {
     'MiniCPM-V': partial(MiniCPM_V, model_path='openbmb/MiniCPM-V'),
     'MiniCPM-V-2': partial(MiniCPM_V, model_path='openbmb/MiniCPM-V-2'),
     'MiniCPM-Llama3-V-2_5': partial(MiniCPM_Llama3_V, model_path='openbmb/MiniCPM-Llama3-V-2_5'),
+    'MiniCPM-Llama3-V-2_5-int4': partial(MiniCPM_Llama3_V, model_path='/mnt/store/weights/hf/MiniCPM-Llama3-V-2_5-int4')
 }
 
 xtuner_series = {
@@ -150,7 +151,7 @@ wemm_series = {
 supported_VLM = {}
 
 model_groups = [
-    ungrouped, api_models, 
+    ungrouped, api_models,
     xtuner_series, qwen_series, llava_series, internvl_series, yivl_series,
     xcomposer_series, minigpt4_series, idefics_series, instructblip_series,
     deepseekvl_series, minicpm_series, cogvlm_series, wemm_series

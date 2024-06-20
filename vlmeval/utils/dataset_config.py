@@ -54,7 +54,8 @@ dataset_URLs = {
 
 dataset_md5_dict = {
     # MMBench v1.0
-    'MMBench_DEV_EN': 'b6caf1133a01c6bb705cf753bb527ed8',
+    # 'MMBench_DEV_EN': 'b6caf1133a01c6bb705cf753bb527ed8',
+    'MMBench_DEV_EN': '2f6f97b64939a37ddc676d0e840d0447',
     'MMBench_TEST_EN': '6939fadb0ce626fefc0bdc9c64efc528',
     'MMBench_DEV_CN': '08b8fc3324a5ed74155350f57be69fbd',
     'MMBench_TEST_CN': '7e1239baf0ee4c8b513e19705a0f317e',
