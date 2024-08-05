@@ -161,6 +161,13 @@ images/
 scripts/*ttf
 .history
 cache_dir/*
+openbmb/
+Efficient-Large-Model/
+Qwen/
+llava-hf/
+microsoft/
+*/*.pkl
+*/*.xlsx
 
 # Evaluation Outputs
 outputs/*

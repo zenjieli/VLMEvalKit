@@ -1,0 +1,221 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Current file",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "View xlsx",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "custom/view_xlsx_file.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "outputs/Qwen2-VL-2B-Instruct/Qwen2-VL-2B-Instruct_MMStar.xlsx",
+                "--lines",
+                "0-10"
+            ]
+        },
+        {
+            "name": "Eval - MiniCPM",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--data",
+                "MMStar",
+                "BLINK",
+                "MMBench_DEV_EN",
+                "RealWorldQA",
+                "HallusionBench",
+                "POPE",
+                "MME",
+                "MMStar",
+                "Blink",
+                "--model",
+                "MiniCPM-Llama3-V-2_5",
+                "--verbose",
+                "--mode",
+                "all"
+            ]
+        },
+        {
+            "name": "Eval - MiniCPM-V2_6",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--data",
+                "MMStar",
+                "BLINK",
+                "MMBench_DEV_EN",
+                "RealWorldQA",
+                "HallusionBench",
+                "POPE",
+                "MME",
+                "MMStar",
+                "HallusionBench",
+                "--model",
+                "MiniCPM-V-2",
+                "MiniCPM-V-2_6",
+                "--verbose",
+                "--mode",
+                "all"
+            ]
+        },
+        {
+            "name": "Eval - Qwen2-V-2B",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--data",
+                "MMStar",
+                "BLINK",
+                "MMBench_DEV_EN",
+                "RealWorldQA",
+                "HallusionBench",
+                "POPE",
+                "MME",
+                "MMStar",
+                "--model",
+                "Qwen2-VL-2B-Instruct",
+                "--verbose",
+                "--mode",
+                "all"
+            ]
+        },
+        {
+            "name": "Eval - Qwen2-V-7B",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--data",
+                "MMStar",
+                "BLINK",
+                "MMBench_DEV_EN",
+                "RealWorldQA",
+                "HallusionBench",
+                "POPE",
+                "MME",
+                "MMStar",
+                "--model",
+                "Qwen2-VL-7B-Instruct",
+                "--verbose",
+                "--mode",
+                "all"
+            ]
+        },
+        {
+            "name": "Eval - Phi3",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--data",
+                "MMStar",
+                "BLINK",
+                "MMBench_DEV_EN",
+                "HallusionBench",
+                "POPE",
+                "MME",
+                "--model",
+                "Phi-3-Vision",
+                "--verbose",
+                "--mode",
+                "all"
+            ]
+        },
+        {
+            "name": "Eval - Vila_3B",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--data",
+                "BLINK",
+                "MMStar",
+                "MMBench_DEV_EN",
+                "RealWorldQA",
+                "HallusionBench",
+                "POPE",
+                "MME",
+                "--model",
+                "VILA1.5-3b",
+                "--verbose",
+                "--mode",
+                "all"
+            ]
+        },
+        {
+            "name": "Eval - Vila_8B",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--data",
+                "BLINK",
+                "MMStar",
+                "POPE",
+                "MMBench_DEV_EN",
+                "RealWorldQA",
+                "HallusionBench",
+                "POPE",
+                "MME",
+                "--model",
+                "Llama-3-VILA1.5-8b",
+                "--verbose",
+                "--mode",
+                "all"
+            ]
+        },
+        {
+            "name": "Eval - Llava",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--data",
+                "POPE",
+                "MMBench_DEV_EN",
+                "RealWorldQA",
+                "HallusionBench",
+                "POPE",
+                "MME",
+                "BLINK",
+                "MMStar",
+                "--model",
+                "llava_next_llama3",
+                "--verbose",
+                "--mode",
+                "all"
+            ]
+        }
+    ]
+}

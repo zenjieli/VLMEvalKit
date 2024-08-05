@@ -99,8 +99,9 @@ class MiniCPM_Llama3_V(BaseModel):
         self.model_path = model_path
         print(f'load from {self.model_path}')
         self.model = AutoModel.from_pretrained(self.model_path, trust_remote_code=True)
-        self.model = self.model.to(dtype=torch.float16)
-        self.model.eval().cuda()
+        if 'int4' not in model_path and 'int8' not in model_path:
+            self.model = self.model.to(dtype=torch.float16)
+            self.model.eval().cuda()
         self.kwargs = kwargs
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_path, trust_remote_code=True)
         torch.cuda.empty_cache()

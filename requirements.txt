@@ -26,6 +26,6 @@ timeout-decorator
 torch>=2.0.1
 tqdm
 transformers
-typing_extensions==4.7.1
+typing_extensions>=4.7.1
 validators
 xlsxwriter
