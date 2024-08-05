@@ -75,6 +75,7 @@ minicpm_series = {
     'MiniCPM-V': partial(MiniCPM_V, model_path='openbmb/MiniCPM-V'),
     'MiniCPM-V-2': partial(MiniCPM_V, model_path='openbmb/MiniCPM-V-2'),
     'MiniCPM-Llama3-V-2_5': partial(MiniCPM_Llama3_V, model_path='openbmb/MiniCPM-Llama3-V-2_5'),
+    'MiniCPM-Llama3-V-2_5-int4': partial(MiniCPM_Llama3_V, model_path='openbmb/MiniCPM-Llama3-V-2_5-int4')
 }
 
 xtuner_series = {
