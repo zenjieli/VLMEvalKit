@@ -1,0 +1,7 @@
+MMBench-DEV:
+20GB RAM;
+69 min
+
+RealWorldQA:
+20GB RAM;
+15 min

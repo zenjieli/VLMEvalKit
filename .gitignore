@@ -158,3 +158,5 @@ images/
 scripts/*ttf
 cache_dir/*
 openbmb/*
+*/*.pkl
+*/*.xlsx

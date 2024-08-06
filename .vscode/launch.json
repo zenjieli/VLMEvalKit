@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Eval",
+            "name": "Eval - MMBench",
             "type": "debugpy",
             "request": "launch",
             "program": "run.py",
@@ -16,6 +16,23 @@
                 "MMBench_DEV_EN",
                 "--model",
                 "MiniCPM-Llama3-V-2_5-int4",
+                "--verbose",
+                "--mode",
+                "all"
+            ]
+        },
+        {
+            "name": "Eval - RealWorldQA",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--data",
+                "RealWorldQA",
+                "--model",
+                "MiniCPM-Llama3-V-2_5",
                 "--verbose",
                 "--mode",
                 "all"
