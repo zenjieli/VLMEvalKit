@@ -13,7 +13,7 @@
             "justMyCode": false,
             "args": [
                 "--data",
-                "RealWorldQA", // MMBench_DEV_EN, RealWorldQA, HallusionBench, POPE, MME
+                "RealWorldQA", // MMBench_DEV_EN, RealWorldQA, HallusionBench, POPE, MME, MMStar, Blink
                 "--model",
                 "MiniCPM-Llama3-V-2_5-int4",
                 "--verbose",
