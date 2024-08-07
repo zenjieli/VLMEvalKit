@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Eval - MMBench",
+            "name": "Eval - MiniCPM",
             "type": "debugpy",
             "request": "launch",
             "program": "run.py",
@@ -13,7 +13,7 @@
             "justMyCode": false,
             "args": [
                 "--data",
-                "MMBench_DEV_EN",
+                "RealWorldQA", // MMBench_DEV_EN, RealWorldQA, HallusionBench, POPE, MME
                 "--model",
                 "MiniCPM-Llama3-V-2_5-int4",
                 "--verbose",
@@ -22,7 +22,7 @@
             ]
         },
         {
-            "name": "Eval - RealWorldQA",
+            "name": "Eval - Phi3",
             "type": "debugpy",
             "request": "launch",
             "program": "run.py",
@@ -30,9 +30,12 @@
             "justMyCode": false,
             "args": [
                 "--data",
-                "RealWorldQA",
+                "MMBench_DEV_EN",
+                "HallusionBench",
+                "POPE",
+                "MME", // MMBench_DEV_EN, RealWorldQA, HallusionBench, POPE, MME
                 "--model",
-                "MiniCPM-Llama3-V-2_5",
+                "Phi-3-Vision",
                 "--verbose",
                 "--mode",
                 "all"
