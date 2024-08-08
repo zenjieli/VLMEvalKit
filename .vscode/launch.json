@@ -13,9 +13,11 @@
             "justMyCode": false,
             "args": [
                 "--data",
-                "RealWorldQA", // MMBench_DEV_EN, RealWorldQA, HallusionBench, POPE, MME, MMStar, Blink
+                // "MMStar",
+                "BLINK",
+                // MMBench_DEV_EN, RealWorldQA, HallusionBench, POPE, MME, MMStar, Blink
                 "--model",
-                "MiniCPM-Llama3-V-2_5-int4",
+                "MiniCPM-Llama3-V-2_5",
                 "--verbose",
                 "--mode",
                 "all"
@@ -36,6 +38,23 @@
                 "MME", // MMBench_DEV_EN, RealWorldQA, HallusionBench, POPE, MME
                 "--model",
                 "Phi-3-Vision",
+                "--verbose",
+                "--mode",
+                "all"
+            ]
+        },
+        {
+            "name": "Eval - Vila_3B",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--data",
+                "POPE",
+                "--model",
+                "VILA1.5-3b",
                 "--verbose",
                 "--mode",
                 "all"

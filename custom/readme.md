@@ -1,5 +1,8 @@
 # Setup
 
+Don't need install from github: MiniCPM, Phi3
+Need install from the original github repo: VILA, LLava
+
 ## Models
 ### MiniCPM
 

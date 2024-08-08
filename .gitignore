@@ -157,7 +157,9 @@ images/
 
 scripts/*ttf
 cache_dir/*
-openbmb/*
-microsoft/*
+openbmb/
+Efficient-Large-Model/
+liuhaotian/
+microsoft/
 */*.pkl
 */*.xlsx
