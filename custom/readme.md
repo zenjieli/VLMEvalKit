@@ -1,7 +1,6 @@
 # Setup
 
-Don't need install from github: MiniCPM, Phi3
-Need latest transformers: Qwen2-VL
+Don't need install from github: MiniCPM, Phi3, Qwen2-VL
 Need install from the original github repo: VILA, LLava-Next
 
 ## Models
