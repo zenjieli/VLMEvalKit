@@ -1,0 +1,17 @@
+MMBench-DEV:
+20GB RAM;
+69 min
+
+RealWorldQA:
+20GB RAM;
+15 min
+
+HallusionBench:
+20GB RAM
+15:30 min (951 questions)
+
+POPE:
+74 min (5127 questions)
+
+MME:
+28 min (2374 questions)

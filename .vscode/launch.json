@@ -83,6 +83,9 @@
             "program": "run.py",
             "console": "integratedTerminal",
             "justMyCode": false,
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            },
             "args": [
                 "--data",
                 "MMStar",
@@ -94,7 +97,8 @@
                 "MME",
                 "MMStar",
                 "--model",
-                "Qwen2-VL-2B-Instruct",
+                // "Qwen2-VL-2B-Instruct",
+                "Qwen2-VL-2B-Instruct-HICO",
                 "--verbose",
                 "--mode",
                 "all"
@@ -212,6 +216,30 @@
                 "MMStar",
                 "--model",
                 "llava_next_llama3",
+                "--verbose",
+                "--mode",
+                "all"
+            ]
+        },
+        {
+            "name": "Eval - InvernVL-1B",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--data",
+                "POPE",
+                "MMBench_DEV_EN",
+                "RealWorldQA",
+                "HallusionBench",
+                "POPE",
+                "MME",
+                "BLINK",
+                "MMStar",
+                "--model",
+                "InternVL2-1B",
                 "--verbose",
                 "--mode",
                 "all"
