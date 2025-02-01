@@ -1,4 +1,5 @@
 from .gpt import OpenAIWrapper, GPT4V
+from .local_server import LocalServerAPI
 from .hf_chat_model import HFChatModel
 from .gemini import GeminiWrapper, GeminiProVision
 from .qwen_vl_api import QwenVLWrapper, QwenVLAPI, Qwen2VLAPI
@@ -21,6 +22,7 @@ from .doubao_vl_api import DoubaoVL
 
 __all__ = [
     'OpenAIWrapper', 'HFChatModel', 'GeminiWrapper', 'GPT4V',
+    'LocalServerAPI',
     'GeminiProVision', 'QwenVLWrapper', 'QwenVLAPI', 'QwenAPI',
     'Claude3V', 'Claude_Wrapper', 'Reka', 'GLMVisionAPI',
     'CWWrapper', 'SenseChatVisionAPI', 'HunyuanVision', 'Qwen2VLAPI',

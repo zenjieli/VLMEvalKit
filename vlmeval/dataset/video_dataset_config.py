@@ -39,6 +39,7 @@ mlvu_dataset = {
 
 tempcompass_dataset = {
     'TempCompass_8frame': partial(TempCompass, dataset='TempCompass', nframe=8),
+    'TempCompass_MCQ_8frame': partial(TempCompass_MCQ, dataset='TempCompass_MCQ', nframe=8, ),
     'TempCompass_1fps': partial(TempCompass, dataset='TempCompass', fps=1.0),
     'TempCompass_0.5fps': partial(TempCompass, dataset='TempCompass', fps=0.5)
 }

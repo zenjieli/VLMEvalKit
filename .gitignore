@@ -27,7 +27,6 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-.vscode/
 .gradio/
 
 # PyInstaller
@@ -166,8 +165,6 @@ cache_dir/*
 # Evaluation Outputs
 outputs/*
 demo.ipynb
-*json
-.vscode
 *.swp
 GPT4o_MINI/
 

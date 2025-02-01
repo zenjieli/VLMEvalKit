@@ -13,6 +13,9 @@ from .image_vqa import (
     CustomVQADataset, CRPE, MathVerse, OlympiadBench, QSpatial, VizWiz, MMNIAH, LogicVista
 )
 
+from .custom_image_mcq import HICOVQADataset
+from .virat import Virat_MCQ
+
 from .image_ccocr import CCOCRDataset
 from .text_mcq import CustomTextMCQDataset, TextMCQDataset
 
@@ -149,6 +152,8 @@ TEXT_DATASET = [
 ]
 
 CUSTOM_DATASET = [
+    HICOVQADataset,
+    Virat_MCQ,
     CustomMCQDataset, CustomVQADataset, CustomTextMCQDataset
 ]
 

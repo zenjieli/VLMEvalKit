@@ -118,6 +118,8 @@ api_models = {
     'Taichu-VL-2B': partial(TaichuVLAPI, model='Taichu-VL-2B', url='https://platform.wair.ac.cn/api/v1/infer/10381/v1/chat/completions'),
     #doubao_vl
     'DoubaoVL': partial(DoubaoVL, model='Doubao-1.5-vision-pro', temperature=0,  retry=10, verbose=False),
+    # Local API models
+    'LocalServer': LocalServerAPI
 }
 
 emu_series = {
@@ -394,6 +396,7 @@ qwen2vl_series = {
     'Qwen2-VL-7B-Instruct-GPTQ-Int4': partial(Qwen2VLChat, model_path='Qwen/Qwen2-VL-7B-Instruct-GPTQ-Int4', min_pixels=1280*28*28, max_pixels=16384*28*28),
     'Qwen2-VL-7B-Instruct-GPTQ-Int8': partial(Qwen2VLChat, model_path='Qwen/Qwen2-VL-7B-Instruct-GPTQ-Int8', min_pixels=1280*28*28, max_pixels=16384*28*28),
     'Qwen2-VL-2B-Instruct': partial(Qwen2VLChat, model_path='Qwen/Qwen2-VL-2B-Instruct', min_pixels=1280*28*28, max_pixels=16384*28*28),
+    'Qwen2-VL-2B-Instruct-HICO': partial(Qwen2VLChat, model_path='hoveringgull/Qwen2-VL-2B-Instruct-HICO', min_pixels=1280*28*28, max_pixels=16384*28*28),
     'Qwen2-VL-2B-Instruct-AWQ': partial(Qwen2VLChat, model_path='Qwen/Qwen2-VL-2B-Instruct-AWQ', min_pixels=1280*28*28, max_pixels=16384*28*28),
     'Qwen2-VL-2B-Instruct-GPTQ-Int4': partial(Qwen2VLChat, model_path='Qwen/Qwen2-VL-2B-Instruct-GPTQ-Int4', min_pixels=1280*28*28, max_pixels=16384*28*28),
     'Qwen2-VL-2B-Instruct-GPTQ-Int8': partial(Qwen2VLChat, model_path='Qwen/Qwen2-VL-2B-Instruct-GPTQ-Int8', min_pixels=1280*28*28, max_pixels=16384*28*28),
@@ -401,6 +404,14 @@ qwen2vl_series = {
     'Qwen2.5-VL-3B': partial(Qwen2VLChat, model_path='Qwen/Qwen2.5-VL-3B-Instruct', min_pixels=1280*28*28, max_pixels=16384*28*28),
     'Qwen2.5-VL-7B': partial(Qwen2VLChat, model_path='Qwen/Qwen2.5-VL-7B-Instruct', min_pixels=1280*28*28, max_pixels=16384*28*28),
     'Qwen2.5-VL-72B': partial(Qwen2VLChat, model_path='Qwen/Qwen2.5-VL-72B-Instruct', min_pixels=1280*28*28, max_pixels=16384*28*28),
+}
+
+video_llama_series = {
+    'VideoLLaMA3-2B-Image': partial(VideoLlama, model_path='DAMO-NLP-SG/VideoLLaMA3-2B-Image'),
+    'VideoLLaMA3-7B-Image': partial(VideoLlama, model_path='DAMO-NLP-SG/VideoLLaMA3-7B-Image'),
+    'VideoLLaMA3-2B': partial(VideoLlama, model_path='DAMO-NLP-SG/VideoLLaMA3-2B'),
+    'VideoLLaMA3-7B': partial(VideoLlama, model_path='DAMO-NLP-SG/VideoLLaMA3-7B'),
+
 }
 
 slime_series = {
@@ -487,6 +498,7 @@ supported_VLM = {}
 model_groups = [
     ungrouped, api_models,
     xtuner_series, qwen_series, llava_series, internvl_series, yivl_series,
+    video_llama_series,
     xcomposer_series, minigpt4_series, idefics_series, instructblip_series,
     deepseekvl_series, deepseekvl2_series, janus_series, minicpm_series, cogvlm_series, wemm_series,
     cambrian_series, chameleon_series, video_models, ovis_series, vila_series,
