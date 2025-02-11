@@ -30,6 +30,7 @@ from .videomme import VideoMME
 from .mvbench import MVBench, MVBench_MP4
 from .mlvu import MLVU, MLVU_MCQ, MLVU_OpenEnded
 from .tempcompass import TempCompass, TempCompass_Captioning, TempCompass_MCQ, TempCompass_YorN
+from .tempcompass_MCQ_YorN import TempCompassMCQ_YorN
 from .longvideobench import LongVideoBench
 from .video_concat_dataset import ConcatVideoDataset
 from .mmgenbench import MMGenBench
@@ -154,6 +155,7 @@ TEXT_DATASET = [
 CUSTOM_DATASET = [
     HICOVQADataset,
     Virat_MCQ,
+    TempCompassMCQ_YorN,
     CustomMCQDataset, CustomVQADataset, CustomTextMCQDataset
 ]
 
